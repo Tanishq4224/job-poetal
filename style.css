@@ -9,7 +9,7 @@
 --black : #2c3e50;
 --white : white;
 --box-shadow : 0 0.5rem 1rem rgba(0,0,0,0.2);
---border-radius : .1rem solid rgba(0,0,0,.3);
+--border-radius : .2rem solid rgba(0,0,0,.3);
 
 
 
@@ -148,7 +148,7 @@ text-transform: capitalize;
 .home-container .home form p{
     text-align: left;
     font-size: 1.6em;
-    color: var(-light-color);
+    color: var(--light-color);
     padding-top: 1rem;
     text-transform: capitalize;
 }
@@ -182,12 +182,16 @@ text-transform: capitalize;
     
 }
 
-   
-        
+.heading {
+    padding: 1rem;
+    text-transform: capitalize;
+}        
 
     .jobs-container .box-container .box{
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
         background-color: var(--white);
         border-radius: .5rem;
         border: var(--border);
@@ -196,12 +200,67 @@ text-transform: capitalize;
         }
 
         .jobs-container .box-container .box .company{
-            width: 20rem;
+            width: 25rem;
             margin: 1rem;
             box-shadow: var(--box-shadow);
             padding: 2rem;
             border-radius: .5rem;
         }
+
+        .company-name {
+            padding: 1rem 0;
+            font-size: 1.5rem;
+            font-weight: 900;
+        }
+
+        .job-title{
+            font-size: 1.5rem;
+            padding: 1rem 0;
+        }
+
+        .location{
+            padding: 0 0 1rem 0;
+            font-size: 1.2rem;
+            color: var(--main-color);
+        }
+
+        .location:hover , .tags p:hover{
+            cursor: pointer;
+        
+        }
+
+        .tags{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .tags p {
+            /* margin: 0.5rem; */
+            padding: 1rem;
+            background-color: var(--light-bg);
+            display: inline-block;
+            border-radius: 0.5rem;
+        }
+.flex-btn{
+    padding: 1rem 0 ;
+}
+
+.fa-heart:hover{
+cursor: pointer;
+}
+
+.box-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.all-jobs{
+    width: 25rem;
+    margin: 1rem;
+}
+
 
 /* jobs end */
 
@@ -305,4 +364,94 @@ body{
     html{
         font-size: 50%;
     }
+}
+
+
+
+/* jobs page start  */
+
+
+
+.job-filter form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    border-radius: .5rem;
+    padding: 2rem;
+}
+
+.submit {
+    display: inline-block;
+width: 25rem;
+}
+
+.submit:hover{
+    color: white;
+    scale: 1.1;
+    transition: .2s;
+}
+
+.job-filter form .flex{
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+justify-content: space-evenly;
+}
+
+
+
+.job-filter form .flex .box p {
+    font-size: 2rem;
+    padding: 1rem  0;
+    text-transform: capitalize;
+}
+
+.job-filter form .flex input  {
+    background-color: var(--light-bg);
+    padding: 1rem;
+
+}
+
+
+ .box .dropdown{
+   margin: 1rem 0 ;
+}
+
+
+
+.list{
+    text-align: center;
+    padding: 1rem;
+    display: block;
+    font-size: 1.2rem;
+    border: var(--border);
+    background-color: var(--white);
+    border-radius: 0.5rem;
+}
+
+.dropdown p{
+    border-radius: 0.5rem;
+    
+    cursor: pointer;
+    transition: .2s ;
+    background-color: var(--white);
+}
+
+ p:hover{
+    scale: 1.1;
+    box-shadow: var(--box-shadow);
+    background-color: var(--light-bg);
+    
+}
+
+ .dropdown .list:hover,
+ .dropdown:hover .list,
+ input:hover,
+input:focus + .list,
+input + .list{
+    cursor: pointer;
+    color: rebeccapurple;
 }
