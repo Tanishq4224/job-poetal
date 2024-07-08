@@ -79,27 +79,27 @@
                 </div>
                 <div class="box">
                     <p>Company</p>
-                    <input type="text" value="" name="title" placeholder="Company-1" required maxlength="20" class="input">
-                    <div class="dropdown ">
+                    <input type="text" value="" id="company-name" name="title" placeholder="Company-1" required maxlength="20" class="output">
+                    <div class="dropdown " >
                         
-                            <p>Comany-1</p>
-                        <p>Comany-2</p>
-                        <p>Comany-3</p>
-                        <p>Comany-4</p>
-                        <p>Comany-5</p>
-                        <p>Comany-6</p>
-                        <p>Comany-7</p>
-                        <p>Comany-8</p>
-                        <p>Comany-9</p>
-                        <p>Comany-10</p>
-                        <p>Comany-11</p>
-                        <p>Comany-12</p>
+                            <p>Company-1</p>
+                        <p>Company-2</p>
+                        <p>Company-3</p>
+                        <p>Company-4</p>
+                        <p>Company-5</p>
+                        <p>Company-6</p>
+                        <p>Company-7</p>
+                        <p>Company-8</p>
+                        <p>Company-9</p>
+                        <p>Company-10</p>
+                        <p>Company-11</p>
+                        <p>Company-12</p>
                         
                         
                     </div>
                 </div>
              </div>
-             <input type="submit" class="btn submit" value="search job">
+             <input type="submit" class="btn  job-search submit" value="search job">
             </form>
     </section>
     <!-- job filter section ends -->
@@ -386,30 +386,8 @@
 
 
 
+<script src="script.js"></script>
 
-<script>
-
-
-let dropdown_items = document.querySelectorAll('.dropdown p')
-let inputField = document.querySelectorAll('.output')
-
-
-
-dropdown_items.forEach (items =>{
-items.onclick = () =>{
-    items_parent = items.parentElement.parentElement;
-    let output = items_parent.querySelector('.output')
-    output.value = items.innerHTML
-}
-
-})
-
-
-
-
-
-
-</script>
 
 
 

@@ -422,8 +422,8 @@ justify-content: space-evenly;
 
 
 
-.list{
-    text-align: center;
+.dropdown p{
+    /* text-align: center; */
     padding: 1rem;
     display: block;
     font-size: 1.2rem;
@@ -436,22 +436,14 @@ justify-content: space-evenly;
     border-radius: 0.5rem;
     
     cursor: pointer;
-    transition: .2s ;
+    transition: .2s all ;
     background-color: var(--white);
 }
 
- p:hover{
+ .dropdown p:hover{
     scale: 1.1;
     box-shadow: var(--box-shadow);
     background-color: var(--light-bg);
     
 }
 
- .dropdown .list:hover,
- .dropdown:hover .list,
- input:hover,
-input:focus + .list,
-input + .list{
-    cursor: pointer;
-    color: rebeccapurple;
-}
